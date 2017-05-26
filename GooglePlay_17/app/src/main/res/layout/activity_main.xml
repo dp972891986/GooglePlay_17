@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto">
+    <!--菜单区域right菜单-->
+    <FrameLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#b49d9d">
+
+    </FrameLayout>
+    <!--菜单区域left菜单-->
+    <FrameLayout
+        android:id="@+id/main_menu_left"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ccc">
+
+    </FrameLayout>
+
+    <!--内容区域-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.itheima.googleplay_17.MainActivity">
+
+        <!--tabs-->
+        <com.astuetz.PagerSlidingTabStripExtends
+            itheima:pstsIndicatorColor="#6666ff"
+
+
+            itheima:pstsTabTextSize="16sp"
+            itheima:pstsSelectedTabTextSize="17sp"
+
+            itheima:pstsTabTextColor="#333333"
+            itheima:pstsSelectedTabTextColor="#6666ff"
+
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"/>
+        <!--viewpager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></android.support.v4.view.ViewPager>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
